@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ibrah\\OneDrive\\Desktop\\Lem\\LemiHotel\\LemiHotel\\LemiHotel.csproj": {}
+    "C:\\Users\\ibrah\\OneDrive\\Desktop\\Project\\LemiHotel\\LemiHotel\\LemiHotel\\LemiHotel.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ibrah\\OneDrive\\Desktop\\Lem\\LemiHotel\\LemiHotel\\LemiHotel.csproj": {
+    "C:\\Users\\ibrah\\OneDrive\\Desktop\\Project\\LemiHotel\\LemiHotel\\LemiHotel\\LemiHotel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ibrah\\OneDrive\\Desktop\\Lem\\LemiHotel\\LemiHotel\\LemiHotel.csproj",
+        "projectUniqueName": "C:\\Users\\ibrah\\OneDrive\\Desktop\\Project\\LemiHotel\\LemiHotel\\LemiHotel\\LemiHotel.csproj",
         "projectName": "LemiHotel",
-        "projectPath": "C:\\Users\\ibrah\\OneDrive\\Desktop\\Lem\\LemiHotel\\LemiHotel\\LemiHotel.csproj",
+        "projectPath": "C:\\Users\\ibrah\\OneDrive\\Desktop\\Project\\LemiHotel\\LemiHotel\\LemiHotel\\LemiHotel.csproj",
         "packagesPath": "C:\\Users\\ibrah\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ibrah\\OneDrive\\Desktop\\Lem\\LemiHotel\\LemiHotel\\obj\\",
+        "outputPath": "C:\\Users\\ibrah\\OneDrive\\Desktop\\Project\\LemiHotel\\LemiHotel\\LemiHotel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ibrah\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,30 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

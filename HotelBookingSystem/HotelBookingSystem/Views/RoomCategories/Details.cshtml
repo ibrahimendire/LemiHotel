@@ -1,0 +1,27 @@
+﻿@model LemiHotel.Models.RoomCategory
+
+
+<h1>Room Type Detail</h1>
+
+<div>
+    <dl class="row">
+        <dt class="col-sm-2">
+            Room Type
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class="col-sm-2">
+           Room Type Id
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+    </dl>
+</div>
+<div>
+    <h3>
+        <a asp-action="Edit" asp-route-id="@Model.Id"><i class="fas fa-edit"></i></a>
+        <a asp-action="Index" class="badge badge-success"> <i class="fas fa-undo-alt"></i> &nbsp; Back to List</a>
+    </h3>
+</div>

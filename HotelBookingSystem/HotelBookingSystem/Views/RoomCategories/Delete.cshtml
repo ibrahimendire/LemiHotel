@@ -1,0 +1,27 @@
+﻿@model LemiHotel.Models.RoomCategory
+
+
+<h1>Delete Room Type</h1>
+
+<table class="table table-bordered">
+    <tr class="table-warning">
+        <th>
+            Room Type
+        </th>
+        <th>
+           Delete
+        </th>
+    </tr>
+    <tr>
+        <td>@Html.DisplayFor(model => model.Name)</td>
+        <td>
+            <form asp-action="Delete">
+                <input type="hidden" asp-for="Id" />
+                <input type="submit" value="Delete" class="btn btn-danger" /> 
+                
+            </form>
+        </td>
+    </tr>
+</table>
+<a asp-action="Index" class="badge badge-success"><h5> <i class="fas fa-undo-alt"></i> &nbsp; Back to List</h5></a>
+

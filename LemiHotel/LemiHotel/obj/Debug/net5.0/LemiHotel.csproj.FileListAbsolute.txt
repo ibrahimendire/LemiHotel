@@ -38,3 +38,14 @@ C:\Users\ibrah\OneDrive\Desktop\LiftOff Project\LemiHotel\LemiHotel\obj\Debug\ne
 C:\Users\ibrah\OneDrive\Desktop\LiftOff Project\LemiHotel\LemiHotel\obj\Debug\net5.0\LemiHotel.pdb
 C:\Users\ibrah\OneDrive\Desktop\LiftOff Project\LemiHotel\LemiHotel\obj\Debug\net5.0\LemiHotel.genruntimeconfig.cache
 C:\Users\ibrah\OneDrive\Desktop\LiftOff Project\LemiHotel\LemiHotel\obj\Debug\net5.0\LemiHotel.csproj.CopyComplete
+C:\Users\ibrah\OneDrive\Desktop\Project\LemiHotel\LemiHotel\LemiHotel\obj\Debug\net5.0\LemiHotel.csprojAssemblyReference.cache
+C:\Users\ibrah\OneDrive\Desktop\Project\LemiHotel\LemiHotel\LemiHotel\obj\Debug\net5.0\LemiHotel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ibrah\OneDrive\Desktop\Project\LemiHotel\LemiHotel\LemiHotel\obj\Debug\net5.0\LemiHotel.AssemblyInfoInputs.cache
+C:\Users\ibrah\OneDrive\Desktop\Project\LemiHotel\LemiHotel\LemiHotel\obj\Debug\net5.0\LemiHotel.AssemblyInfo.cs
+C:\Users\ibrah\OneDrive\Desktop\Project\LemiHotel\LemiHotel\LemiHotel\obj\Debug\net5.0\LemiHotel.csproj.CoreCompileInputs.cache
+C:\Users\ibrah\OneDrive\Desktop\Project\LemiHotel\LemiHotel\LemiHotel\obj\Debug\net5.0\LemiHotel.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ibrah\OneDrive\Desktop\Project\LemiHotel\LemiHotel\LemiHotel\obj\Debug\net5.0\LemiHotel.RazorAssemblyInfo.cache
+C:\Users\ibrah\OneDrive\Desktop\Project\LemiHotel\LemiHotel\LemiHotel\obj\Debug\net5.0\LemiHotel.RazorAssemblyInfo.cs
+C:\Users\ibrah\OneDrive\Desktop\Project\LemiHotel\LemiHotel\LemiHotel\obj\Debug\net5.0\LemiHotel.dll
+C:\Users\ibrah\OneDrive\Desktop\Project\LemiHotel\LemiHotel\LemiHotel\obj\Debug\net5.0\ref\LemiHotel.dll
+C:\Users\ibrah\OneDrive\Desktop\Project\LemiHotel\LemiHotel\LemiHotel\obj\Debug\net5.0\LemiHotel.pdb
