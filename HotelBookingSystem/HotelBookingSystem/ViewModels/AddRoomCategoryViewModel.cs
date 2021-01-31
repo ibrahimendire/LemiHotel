@@ -1,6 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-namespace LemiHotel.ViewModels
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace HotelBookingSystem.ViewModels
 {
     public class AddRoomCategoryViewModel
     {

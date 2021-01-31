@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
-using LemiHotel.Models;
+
 
 namespace HotelBookingSystem.Data
 {
@@ -13,7 +13,7 @@ namespace HotelBookingSystem.Data
             : base(options)
         {
         }
-        public DbSet<LemiHotel.Models.Room> Room { get; set; }
-        public DbSet<LemiHotel.Models.RoomCategory> RoomCategory { get; set; }
+        public DbSet<HotelBookingSystem.Models.Room> Room { get; set; }
+        public DbSet<HotelBookingSystem.Models.RoomCategory> RoomCategory { get; set; }
     }
 }

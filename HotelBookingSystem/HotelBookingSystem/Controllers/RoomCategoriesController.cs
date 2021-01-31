@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using HotelBookingSystem.Data;
-using LemiHotel.Models;
+using HotelBookingSystem.Models;
 
 namespace HotelBookingSystem.Controllers
 {

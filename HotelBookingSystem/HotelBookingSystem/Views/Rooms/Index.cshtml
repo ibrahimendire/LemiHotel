@@ -1,4 +1,4 @@
-﻿@model IEnumerable<LemiHotel.Models.Room>
+﻿@model IEnumerable<HotelBookingSystem.Models.Room>
 
 <h1>Room List</h1>
 
@@ -15,7 +15,7 @@
                 Room Price
             </th>
             <th>
-                Room Type Id
+                Room Type
             </th>
             <th>Edit</th>
             <th>Detail</th>
@@ -26,13 +26,13 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Name)
+                @item.Name
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Price)
+              $  @item.Price
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Category.Id)
+                @item.Category.Name
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id"><h3><i class="fas fa-edit"></i></h3></a>

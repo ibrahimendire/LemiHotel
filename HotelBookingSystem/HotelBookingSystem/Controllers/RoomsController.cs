@@ -6,7 +6,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using HotelBookingSystem.Data;
-using LemiHotel.Models;
+
+using HotelBookingSystem.ViewModels;
+using HotelBookingSystem.Models;
 
 namespace HotelBookingSystem.Controllers
 {
@@ -48,23 +50,35 @@ namespace HotelBookingSystem.Controllers
         // GET: Rooms/Create
         public IActionResult Create()
         {
-            ViewData["CategoryId"] = new SelectList(Context.Set<RoomCategory>(), "Id", "Id");
-            return View();
+            List<RoomCategory> categories = Context.RoomCategory.ToList();
+            AddRoomViewModel addRoomViewModel = new AddRoomViewModel(categories);
+          
+            return View(addRoomViewModel);
         }
 
         // POST: Rooms/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Name,Price,CategoryId,Id")] Room room)
+      
+        public IActionResult Create(AddRoomViewModel addRoomViewModel)
         {
             if (ModelState.IsValid)
             {
-                Context.Add(room);
-                await Context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                RoomCategory theCategory = Context.RoomCategory.Find(addRoomViewModel.CategoryId);
+                Room newRoom = new Room
+                {
+                    Name = addRoomViewModel.Name,
+                    Price = addRoomViewModel.Price,
+                    Category = theCategory,
+
+                };
+
+                Context.Room.Add(newRoom);
+                Context.SaveChanges();
+
+                return Redirect("/Rooms");
             }
-            ViewData["CategoryId"] = new SelectList(Context.Set<RoomCategory>(), "Id", "Id", room.CategoryId);
-            return View(room);
+            return View(addRoomViewModel);
         }
 
         // GET: Rooms/Edit/5
@@ -164,7 +178,7 @@ namespace HotelBookingSystem.Controllers
         }
         public async Task<IActionResult> ShowSearchResults(string SearchPhrase)
         {
-            return View("Index", await Context.Room.Where(e => e.Name.Contains(SearchPhrase)).ToListAsync());
+            return View("Index",await Context.Room.Where(e => e.Category.Name.Contains(SearchPhrase)).ToListAsync());
         }
     }
 }

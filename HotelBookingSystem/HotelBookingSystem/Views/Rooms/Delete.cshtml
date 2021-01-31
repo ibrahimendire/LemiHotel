@@ -1,4 +1,4 @@
-﻿@model LemiHotel.Models.Room
+﻿@model HotelBookingSystem.Models.Room
 
 
 <div>
@@ -13,20 +13,19 @@
                 Room Price
             </th>
             <th>
-                Room Category Id
+                Room Type 
             </th>
             <th>Delete</th>
         </tr>
         <tr>
             <td>
-                @Html.DisplayFor(model => model.Price)
-            </td>
-
-            <td>
-                @Html.DisplayNameFor(model => model.Category)
+                @Html.DisplayFor(model => model.Name)
             </td>
             <td>
-                @Html.DisplayFor(model => model.Category.Id)
+                $ @Html.DisplayFor(model => model.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Category.Name)
             </td>
             <td>
                 <form asp-action="Delete">

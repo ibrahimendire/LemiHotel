@@ -1,6 +1,7 @@
-﻿using System;
+﻿
+using System;
 
-namespace LemiHotel.Models
+namespace HotelBookingSystem.Models
 {
     public class Room
     {
@@ -8,10 +9,8 @@ namespace LemiHotel.Models
         public string Price { get; set; }
         public RoomCategory Category { get; set; }
         public int CategoryId { get; set; }
-
-
-        public int Id { get; set; }
-       // static private int nextId = 1;
+         public int Id { get; set; }
+      
         public Room()
         {
       

@@ -1,9 +1,10 @@
-﻿using System;
+﻿using HotelBookingSystem.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace LemiHotel.Models
+namespace HotelBookingSystem.Models
 {
     public class RoomCategory
     {
