@@ -1,5 +1,6 @@
 ﻿
 using System;
+using System.Collections.Generic;
 
 namespace HotelBookingSystem.Models
 {
@@ -10,7 +11,7 @@ namespace HotelBookingSystem.Models
         public RoomCategory Category { get; set; }
         public int CategoryId { get; set; }
          public int Id { get; set; }
-      
+        public List<Guest> Guests { get; set; }
         public Room()
         {
       

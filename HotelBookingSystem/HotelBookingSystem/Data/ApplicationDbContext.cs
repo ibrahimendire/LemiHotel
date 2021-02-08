@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using HotelBookingSystem.Models;
 
 
 namespace HotelBookingSystem.Data
@@ -15,5 +16,6 @@ namespace HotelBookingSystem.Data
         }
         public DbSet<HotelBookingSystem.Models.Room> Room { get; set; }
         public DbSet<HotelBookingSystem.Models.RoomCategory> RoomCategory { get; set; }
+        public DbSet<HotelBookingSystem.Models.Guest> Guest { get; set; }
     }
 }

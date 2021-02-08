@@ -1,0 +1,64 @@
+﻿@model HotelBookingSystem.Models.Guest
+
+
+
+<h1>Details</h1>
+
+<div>
+    <h4>Guest</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Phone)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Phone)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CheckinDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CheckinDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CheckoutDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CheckoutDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Room)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Room.Name)
+        </dd>
+    </dl>
+</div>
+<h3>
+    <a asp-action="Edit" asp-route-id="@Model.Id"><i class="fas fa-edit"></i></a>
+    <a asp-action="Index" class="badge badge-success"> <i class="fas fa-undo-alt"></i> &nbsp; Back to List</a>
+</h3>

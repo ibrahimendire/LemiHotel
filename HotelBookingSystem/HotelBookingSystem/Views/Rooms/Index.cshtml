@@ -13,10 +13,8 @@
             </th>
             <th>
                 Room Price
-            </th>
-          @*  <th>
-                Room Type
-            </th>*@
+            </th>        
+            <th>Room Type</th>
             <th>Edit</th>
             <th>Detail</th>
             <th class="badge badge-pill badge-danger">Delete</th>
@@ -29,11 +27,11 @@
                 @item.Name
             </td>
             <td>
-              $  @item.Price
+                $  @item.Price
+            </td>      
+            <td>
+                @Html.DisplayFor(modelItem => item.Category.Name)
             </td>
-           @* <td>
-                @item.Category.Name
-            </td>*@
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id"><h3><i class="fas fa-edit"></i></h3></a>
             </td>

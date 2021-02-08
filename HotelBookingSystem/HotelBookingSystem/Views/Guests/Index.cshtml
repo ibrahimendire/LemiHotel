@@ -1,0 +1,79 @@
+﻿@model IEnumerable<HotelBookingSystem.Models.Guest>
+
+
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Phone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CheckinDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CheckoutDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Room)
+            </th>
+            <th>Edit</th>
+            <th>Detail</th>
+            <th class="badge badge-pill badge-danger">Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Phone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CheckinDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CheckoutDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Room.Name)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id"><h3><i class="fas fa-edit"></i></h3></a>
+            </td>
+            <td>
+                <a asp-action="Details" asp-route-id="@item.Id"><h3><i class="fas fa-info-circle"></i></h3></a>
+            </td>
+            <td>
+                <a asp-action="Delete" asp-route-id="@item.Id"><h3><i class="fas fa-trash-alt"></i></h3></a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
