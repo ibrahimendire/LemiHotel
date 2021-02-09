@@ -6,23 +6,29 @@
 <div>   
     <hr />
     <dl class="row">
-        <dt class = "col-sm-2">
-           Room Number
+        <dt class="col-sm-2">
+            Room Number
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Name)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             Room Price
         </dt>
-        <dd class = "col-sm-10">
-           $ @Html.DisplayFor(model => model.Price)
+        <dd class="col-sm-10">
+            $ @Html.DisplayFor(model => model.Price)
         </dd>
-        <dt class = "col-sm-2">
-           Room Type
+        <dt class="col-sm-2">
+            Room Type
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Category.Name)
+        </dd>
+        <dt class="col-sm-2">
+            Room Id
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Category.Id)
         </dd>
     </dl>
 </div>

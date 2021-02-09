@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using HotelBookingSystem.Data;
 using HotelBookingSystem.Models;
+using HotelBookingSystem.ViewModels;
 
 namespace HotelBookingSystem.Controllers
 {
@@ -48,25 +49,41 @@ namespace HotelBookingSystem.Controllers
         // GET: Guests/Create
         public IActionResult Create()
         {
-            ViewData["RoomId"] = new SelectList(_context.Room, "Id", "Id");
-            return View();
+            List<Room> rooms = _context.Room.ToList();
+            AddGuestViewModel addRoomViewModel = new AddGuestViewModel(rooms);
+            //ViewData["RoomId"] = new SelectList(_context.Room, "Id", "Id");
+            return View(addRoomViewModel);
         }
 
         // POST: Guests/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("FirstName,LastName,Phone,Email,Address,CheckinDate,CheckoutDate,RoomId,Id")] Guest guest)
+        public IActionResult Create(AddGuestViewModel addGuestViewModel)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(guest);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                Room theRoom = _context.Room.Find(addGuestViewModel.RoomId);
+                Guest newGuest = new Guest
+
+                {
+                    FirstName = addGuestViewModel.FirstName,
+                    LastName = addGuestViewModel.LastName,
+                    Phone =addGuestViewModel.Phone,
+                    Email = addGuestViewModel.Email,
+                    Address = addGuestViewModel.Address,
+                    CheckinDate = addGuestViewModel.CheckinDate,
+                    CheckoutDate = addGuestViewModel.CheckoutDate,
+                    Room = theRoom,
+
+                };
+
+                _context.Guest.Add(newGuest);
+                _context.SaveChanges();
+
+                return Redirect("/Guests");
             }
-            ViewData["RoomId"] = new SelectList(_context.Room, "Id", "Id", guest.RoomId);
-            return View(guest);
+            return View(addGuestViewModel);
         }
 
         // GET: Guests/Edit/5
