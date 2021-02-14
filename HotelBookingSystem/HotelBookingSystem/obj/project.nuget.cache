@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4hJoXFeCuLsZs2Ng052oB10TrBvBlkmKcorIOLd0zKPugmTQxs+IbT7aB9kmFzOL6A40qE6kj8iKfxZWI7LpGg==",
+  "dgSpecHash": "vL605gPmsZI6fq3Iug8vyOlDbyb6txn0UxUcLqX9EVkdGPypsbSn6H0yGDYENhKA3r8MpxJRq2oI+oVbiEX+Rg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ibrah\\OneDrive\\Desktop\\Project\\LemiHotel\\HotelBookingSystem\\HotelBookingSystem\\HotelBookingSystem.csproj",
+  "projectFilePath": "C:\\Users\\ibrah\\OneDrive\\Desktop\\project\\LemiHotel\\HotelBookingSystem\\HotelBookingSystem\\HotelBookingSystem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ibrah\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ibrah\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.1\\microsoft.aspnetcore.cryptography.internal.5.0.1.nupkg.sha512",

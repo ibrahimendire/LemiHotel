@@ -7820,11 +7820,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ibrah\\OneDrive\\Desktop\\Project\\LemiHotel\\HotelBookingSystem\\HotelBookingSystem\\HotelBookingSystem.csproj",
+      "projectUniqueName": "C:\\Users\\ibrah\\OneDrive\\Desktop\\project\\LemiHotel\\HotelBookingSystem\\HotelBookingSystem\\HotelBookingSystem.csproj",
       "projectName": "HotelBookingSystem",
-      "projectPath": "C:\\Users\\ibrah\\OneDrive\\Desktop\\Project\\LemiHotel\\HotelBookingSystem\\HotelBookingSystem\\HotelBookingSystem.csproj",
+      "projectPath": "C:\\Users\\ibrah\\OneDrive\\Desktop\\project\\LemiHotel\\HotelBookingSystem\\HotelBookingSystem\\HotelBookingSystem.csproj",
       "packagesPath": "C:\\Users\\ibrah\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ibrah\\OneDrive\\Desktop\\Project\\LemiHotel\\HotelBookingSystem\\HotelBookingSystem\\obj\\",
+      "outputPath": "C:\\Users\\ibrah\\OneDrive\\Desktop\\project\\LemiHotel\\HotelBookingSystem\\HotelBookingSystem\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ibrah\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -72,7 +72,7 @@ namespace HotelBookingSystem.Controllers
                     Category = theCategory,
 
                 };
-
+                
                 Context.Room.Add(newRoom);
                 Context.SaveChanges();
 

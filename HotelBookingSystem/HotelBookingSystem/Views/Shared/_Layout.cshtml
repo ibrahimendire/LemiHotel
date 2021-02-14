@@ -20,20 +20,24 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index"><i class="fas fa-home"></i></a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index"> <h1><i class="fas fa-home"></i> </h1></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Rooms" asp-action="Index">Rooms</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Rooms" asp-action="Index"> <h3 class="btn btn-outline-success"> Rooms</h3></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="RoomCategories" asp-action="Index">RoomType</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="RoomCategories" asp-action="Index"><h3 class="btn btn-outline-success">RoomType</h3></a>
+                        </li>
+                        <li>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="AddEmployee" asp-action="Index"><h3 class="btn btn-outline-success">AddEmployee</h3></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Guests" asp-action="Index">BookRoom</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Guests" asp-action="Index"><h3 class="btn btn-outline-success">BookRoom</h3></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Rooms" asp-action="ShowSearchForm">Search</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Rooms" asp-action="ShowSearchForm"><h3 class="btn btn-outline-success">Search</h3></a>
                         </li>
+
                     </ul>
                     <partial name="_LoginPartial" />
                 </div>
