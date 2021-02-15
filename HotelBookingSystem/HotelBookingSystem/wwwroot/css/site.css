@@ -60,10 +60,8 @@ html {
 
 body {
     /* Margin bottom by footer height */
-    margin-bottom: 60px;
-    
-    background-color:aqua;
-    background-image: repeating-linear-gradient(gray ,gray 1% ,lightblue 20% ,yellow 5% );
+      margin-bottom: 60px;
+   
 }
 .footer {
   position: absolute;

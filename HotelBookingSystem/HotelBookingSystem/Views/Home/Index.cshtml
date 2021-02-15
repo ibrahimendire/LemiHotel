@@ -2,30 +2,152 @@
 
 
 <div class="text-center">
+    <div class="welcome">
+        <h1>𝐖𝐄𝐋𝐂𝐎𝐌𝐄 𝐓𝐨  𝕃𝕖𝕞𝕚 ℍ𝕠𝕥𝕖𝕝 </h1>
+        <p> Current Date/Time:   <span id="datetime"></span></p>
 
-    <h1>𝐖𝐄𝐋𝐂𝐎𝐌𝐄 𝐓𝐨  𝕃𝕖𝕞𝕚 ℍ𝕠𝕥𝕖𝕝 </h1>
-    <p>Date/Time: <span id="datetime"></span></p>
+
+        <h1 id="temperature"></h1>
+        <h2 id="description"></h2>
+        <p id="location"></p>
+        <p></p>
+    </div>
+
+    <marquee direction="left" scrollamount="3">  
+        <h1 class="tex"> 𝕃𝕖𝕞𝕚 ℍ𝕠𝕥𝕖𝕝 <br />THE BEST PLACE TO STAY!!</h1>  
+    </marquee>
+
+        <style>
+            body {
+                background-image: url("https://i.ibb.co/4jxL4xB/pool-png.jpg");
+                background-color: #cccccc; /* Used if the image is unavailable */
+                height: 500px; /* You must set a specified height */
+                background-position: center; /* Center the image */
+                background-repeat: no-repeat; /* Do not repeat the image */
+                background-size: cover;
+            }
+
+            .welcome {
+                position: relative;
+                left: 150px;
+                top: -15px;
+                background-color: ghostwhite;
+                width: 820px;
+                height: 220px;
+            }
+            .tex {
+                color: white;
+                background-image: url("https://i.ibb.co/L0X17xr/A0-CEA36-C-BEAB-4-B6-E-943-C-D4-C58515-DD27.jpg");
+                position: relative;
+                left: 150px;
+                top: 1px;
+                width: 630px;
+                height: 280px;
+            }
+        </style>
 
 
-    
         <script>
-                var dt = new Date();
-                document.getElementById("datetime").innerHTML = dt.toLocaleString();         
+            var dt = new Date();
+            document.getElementById("datetime").innerHTML = dt.toLocaleString();
+
+
+
+            function getWeather() {
+                let temperature = document.getElementById("temperature");
+                let description = document.getElementById("description");
+                let location = document.getElementById("location");
+            }
+
+            let api = "https://api.openweathermap.org/data/2.5/weather";
+            let apiKey = "a7ae6cc41f4418017387af627bf49aaa";
+
+
+            navigator.geolocation.getCurrentPosition(success, error);
+
+
+            function success(position) {
+                console.log(position);
+            }
+
+            function error() {
+                console.log("error");
+            }
+
+
+            getWeather()
+
+
+            latitude = position.coords.latitude;
+            longitude = position.coords.longitude;
+
+            let url =
+                api +
+                "?lat=" +
+                latitude +
+                "&lon=" +
+                longitude +
+                "&appid=" +
+                apiKey +
+                "&units=imperial";
+
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                    let temp = data.main.temp;
+                    temperature.innerHTML = temp + "° F";
+                    location.innerHTML =
+                        data.name + " (" + latitude + "°, " + longitude + "°)";
+                    description.innerHTML = data.weather[0].main;
+                });
+
+
+            function getWeather() {
+                let temperature = document.getElementById("temperature");
+                let description = document.getElementById("description");
+                let location = document.getElementById("location");
+
+                let api = "https://api.openweathermap.org/data/2.5/weather";
+                let apiKey = "f146799a557e8ab658304c1b30cc3cfd";
+
+                location.innerHTML = "Locating...";
+
+                navigator.geolocation.getCurrentPosition(success, error);
+
+                function success(position) {
+                    latitude = position.coords.latitude;
+                    longitude = position.coords.longitude;
+
+                    let url =
+                        api +
+                        "?lat=" +
+                        latitude +
+                        "&lon=" +
+                        longitude +
+                        "&appid=" +
+                        apiKey +
+                        "&units=imperial";
+
+                    fetch(url)
+                        .then(response => response.json())
+                        .then(data => {
+                            console.log(data);
+                            let temp = data.main.temp;
+                            temperature.innerHTML = temp + "° F";
+                            location.innerHTML =
+                                data.name + " (" + latitude + "°, " + longitude + "°)";
+                            description.innerHTML = data.weather[0].main;
+                        });
+                }
+
+                function error() {
+                    location.innerHTML = "Unable to retrieve your location";
+                }
+            }
+
+            getWeather();
         </script>
+    
 
-   
-    <img src="https://i.ibb.co/4jxL4xB/pool-png.jpg" alt="pool-png" border="0">
-
-
-
-    @*<h5 class="card-title">Make your booking easy with Lemi Hotel Booking System</h5>
-        <p class="card-text">This is HotelBooking  manegment web App.</p>
-        <div style="color:Highlight; font-size:100Px; ">
-            <marquee behavior="alternate" scrollamount="5">
-                <a href="https://ibb.co/D1HQ29Y">
-                    <img src="https://i.ibb.co/L0X17xr/A0-CEA36-C-BEAB-4-B6-E-943-C-D4-C58515-DD27.jpg" height="200" width="400" alt="Lemi Hotel" border="0">
-                </a> <br />
-                𝕃𝕖𝕞𝕚 ℍ𝕠𝕥𝕖𝕝
-            </marquee>
-        </div> *@
 </div>
