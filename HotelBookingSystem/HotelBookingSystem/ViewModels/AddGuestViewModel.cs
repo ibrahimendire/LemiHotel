@@ -26,6 +26,15 @@ namespace HotelBookingSystem.ViewModels
         [Required(ErrorMessage = "please enter Address")]
         public string Address { get; set; }
 
+      
+        public string Address2 { get; set; }
+        [Required(ErrorMessage = "please enter City ")]
+        public string City { get; set; }
+        [Required(ErrorMessage = "please Select State ")]
+        public string State { get; set; }
+        [Required(ErrorMessage = "please enter Zip code")]
+        public string Zip { get; set; }
+
         [Required(ErrorMessage = "please Slect CheckInDate")]
         public DateTime CheckinDate { get; set; }
 

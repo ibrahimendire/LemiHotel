@@ -171,14 +171,14 @@ namespace HotelBookingSystem.Controllers
 
 
 
-        public IActionResult ShowSearchForm()
+        public async Task<IActionResult> ShowSearchForm()
         {
 
             return View();
         }
         public async Task<IActionResult> ShowSearchResults(string SearchPhrase)
         {
-            return View("Index",await Context.Room.Where(e => e.Category.Name.Contains(SearchPhrase)).ToListAsync());
+            return View("Index", await Context.Room.Where(e => e.Category.Name.Contains(SearchPhrase)).ToListAsync());
         }
     }
 }

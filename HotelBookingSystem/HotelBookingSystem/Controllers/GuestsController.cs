@@ -173,5 +173,8 @@ namespace HotelBookingSystem.Controllers
         {
             return _context.Guest.Any(e => e.Id == id);
         }
+
+      
+
     }
 }

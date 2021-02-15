@@ -29,11 +29,17 @@ namespace HotelBookingSystem.Data.Migrations
                     b.Property<string>("Address")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Address2")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime>("CheckinDate")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime>("CheckoutDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("City")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
                         .HasColumnType("nvarchar(max)");
@@ -49,6 +55,12 @@ namespace HotelBookingSystem.Data.Migrations
 
                     b.Property<int>("RoomId")
                         .HasColumnType("int");
+
+                    b.Property<string>("State")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Zip")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
