@@ -17,17 +17,24 @@ namespace HotelBookingSystem.ViewModels
         [Required(ErrorMessage = "please enter Last Name")]
         public string LastName { get; set; }
 
+
         [Required(ErrorMessage = "please enter Phone Number")]
         public string Phone { get; set; }
+
 
         [Required(ErrorMessage = "please enter Email")]
         public string Email { get; set; }
 
+
         [Required(ErrorMessage = "please enter Address")]
         public string Address { get; set; }
 
-      
+
+
+        [Required(ErrorMessage = "please enter Address")]
         public string Address2 { get; set; }
+
+
         [Required(ErrorMessage = "please enter City ")]
         public string City { get; set; }
         [Required(ErrorMessage = "please Select State ")]
@@ -38,8 +45,10 @@ namespace HotelBookingSystem.ViewModels
         [Required(ErrorMessage = "please Slect CheckInDate")]
         public DateTime CheckinDate { get; set; }
 
+
         [Required(ErrorMessage = "please Select CheckoutDate")]
         public DateTime CheckoutDate { get; set; }
+
 
         [Required(ErrorMessage = "please Select Room")]
         public int RoomId { get; set; }

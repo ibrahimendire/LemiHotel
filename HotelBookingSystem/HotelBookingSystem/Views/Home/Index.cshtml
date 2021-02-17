@@ -98,7 +98,7 @@
                     let temp = data.main.temp;
                     temperature.innerHTML = temp + "° F";
                     location.innerHTML =
-                        data.name + " (" + latitude + "°, " + longitude + "°)";
+                        data.name @*+ " (" + latitude + "°, " + longitude + "°)";*@
                     description.innerHTML = data.weather[0].main;
                 });
 
@@ -136,7 +136,7 @@
                             let temp = data.main.temp;
                             temperature.innerHTML = temp + "° F";
                             location.innerHTML =
-                                data.name + " (" + latitude + "°, " + longitude + "°)";
+                                data.name @*+ " (" + latitude + "°, " + longitude + "°)";*@
                             description.innerHTML = data.weather[0].main;
                         });
                 }

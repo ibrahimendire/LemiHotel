@@ -25,6 +25,9 @@ namespace HotelBookingSystem.Models
         public Room Room { get; set; }
         public int RoomId { get; set; }
 
+        public List<Checkout> Checkouts { get; set; }
+
+
         public int Id { get; set; }
 
 

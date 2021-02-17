@@ -13,17 +13,17 @@ namespace HotelBookingSystem.Controllers
 {
     public class GuestsController : Controller
     {
-        private readonly ApplicationDbContext _context;
+        private readonly ApplicationDbContext Context;
 
         public GuestsController(ApplicationDbContext context)
         {
-            _context = context;
+            Context = context;
         }
 
         // GET: Guests
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.Guest.Include(g => g.Room);
+            var applicationDbContext = Context.Guest.Include(g => g.Room);
             return View(await applicationDbContext.ToListAsync());
         }
 
@@ -35,7 +35,7 @@ namespace HotelBookingSystem.Controllers
                 return NotFound();
             }
 
-            var guest = await _context.Guest
+            var guest = await Context.Guest
                 .Include(g => g.Room)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (guest == null)
@@ -49,9 +49,9 @@ namespace HotelBookingSystem.Controllers
         // GET: Guests/Create
         public IActionResult Create()
         {
-            List<Room> rooms = _context.Room.ToList();
+            List<Room> rooms = Context.Room.ToList();
             AddGuestViewModel addRoomViewModel = new AddGuestViewModel(rooms);
-            //ViewData["RoomId"] = new SelectList(_context.Room, "Id", "Id");
+            //ViewData["RoomId"] = new SelectList(Context.Room, "Id", "Id");
             return View(addRoomViewModel);
         }
 
@@ -63,7 +63,7 @@ namespace HotelBookingSystem.Controllers
         {
             if (ModelState.IsValid)
             {
-                Room theRoom = _context.Room.Find(addGuestViewModel.RoomId);
+                Room theRoom = Context.Room.Find(addGuestViewModel.RoomId);
                 Guest newGuest = new Guest
 
                 {
@@ -72,14 +72,18 @@ namespace HotelBookingSystem.Controllers
                     Phone =addGuestViewModel.Phone,
                     Email = addGuestViewModel.Email,
                     Address = addGuestViewModel.Address,
+                    Address2 =addGuestViewModel.Address2,
+                    City = addGuestViewModel.City,
+                    State = addGuestViewModel.State,
+                    Zip = addGuestViewModel.Zip,
                     CheckinDate = addGuestViewModel.CheckinDate,
                     CheckoutDate = addGuestViewModel.CheckoutDate,
                     Room = theRoom,
 
                 };
 
-                _context.Guest.Add(newGuest);
-                _context.SaveChanges();
+                Context.Guest.Add(newGuest);
+                Context.SaveChanges();
 
                 return Redirect("/Guests");
             }
@@ -94,12 +98,12 @@ namespace HotelBookingSystem.Controllers
                 return NotFound();
             }
 
-            var guest = await _context.Guest.FindAsync(id);
+            var guest = await Context.Guest.FindAsync(id);
             if (guest == null)
             {
                 return NotFound();
             }
-            ViewData["RoomId"] = new SelectList(_context.Room, "Id", "Id", guest.RoomId);
+            ViewData["RoomId"] = new SelectList(Context.Room, "Id", "Id", guest.RoomId);
             return View(guest);
         }
 
@@ -119,8 +123,8 @@ namespace HotelBookingSystem.Controllers
             {
                 try
                 {
-                    _context.Update(guest);
-                    await _context.SaveChangesAsync();
+                    Context.Update(guest);
+                    await Context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -135,7 +139,7 @@ namespace HotelBookingSystem.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["RoomId"] = new SelectList(_context.Room, "Id", "Id", guest.RoomId);
+            ViewData["RoomId"] = new SelectList(Context.Room, "Id", "Id", guest.RoomId);
             return View(guest);
         }
 
@@ -147,7 +151,7 @@ namespace HotelBookingSystem.Controllers
                 return NotFound();
             }
 
-            var guest = await _context.Guest
+            var guest = await Context.Guest
                 .Include(g => g.Room)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (guest == null)
@@ -163,15 +167,15 @@ namespace HotelBookingSystem.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var guest = await _context.Guest.FindAsync(id);
-            _context.Guest.Remove(guest);
-            await _context.SaveChangesAsync();
+            var guest = await Context.Guest.FindAsync(id);
+            Context.Guest.Remove(guest);
+            await Context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool GuestExists(int id)
         {
-            return _context.Guest.Any(e => e.Id == id);
+            return Context.Guest.Any(e => e.Id == id);
         }
 
       

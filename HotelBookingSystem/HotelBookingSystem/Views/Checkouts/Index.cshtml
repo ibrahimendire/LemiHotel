@@ -1,0 +1,53 @@
+﻿@model IEnumerable<HotelBookingSystem.Models.Checkout>
+
+
+<p>
+    <a asp-action="Create">Check in Guest</a>
+
+</p>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>
+
+                @Html.DisplayNameFor(model => model.Guest.FirstName)
+            </th>
+            <th>
+
+                @Html.DisplayNameFor(model => model.Guest.CheckinDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Guest.CheckoutDate)
+            </th>
+
+            <th>Detail</th>
+            <th>Checkout</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Guest.FirstName)
+                </td>
+                <td>
+
+                    @*  @item.Guest.CheckinDate*@
+                    @Html.DisplayFor(modelItem => item.Guest.CheckinDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Guest.CheckoutDate)
+                </td>
+                <td>
+
+                    <a asp-action="Details" asp-route-id="@item.Id"><h3><i class="fas fa-info-circle"></i></h3></a>
+                </td>
+                <td>
+                    <a asp-action="Delete" asp-route-id="@item.Id">Checkout</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

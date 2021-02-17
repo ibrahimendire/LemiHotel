@@ -1,0 +1,47 @@
+﻿@model HotelBookingSystem.Models.Checkout
+
+
+<div>
+
+    <h3>Are you sure you want to Checkout   @Html.DisplayFor(model => model.Guest.FirstName) ? </h3>
+    <hr />
+    <table class="table table-bordered">
+        <tr class="table-warning">
+            <th>
+                First Name
+            </th>
+            <th>
+                Chechin Date
+            </th>
+            <th>
+                Checkout Date
+            </th>
+            <th>
+                Note
+            </th>
+            <th>Checkout</th>
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.Guest.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Guest.CheckinDate)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Guest.CheckoutDate)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Note)
+            </td>
+            <td>
+                <form asp-action="Delete">
+                    <input type="hidden" asp-for="Id" />
+                    <input type="submit" value="Checkout" class="btn btn-danger" />
+                </form>
+            </td>
+        </tr>
+    </table>
+    <a asp-action="Index" class="badge badge-success"><h5> <i class="fas fa-undo-alt"></i> &nbsp; Back to List</h5></a>
+
+</div>
