@@ -3,21 +3,34 @@
 
 <div class="text-center">
     <div class="welcome">
-        <h1>𝐖𝐄𝐋𝐂𝐎𝐌𝐄 𝐓𝐨  𝕃𝕖𝕞𝕚 ℍ𝕠𝕥𝕖𝕝 </h1>
-        <p> Current Date/Time:   <span id="datetime"></span></p>
-
-
-        <h1 id="temperature"></h1>
-        <h2 id="description"></h2>
-        <p id="location"></p>
-        <p></p>
+        <h1>WELCOME TO LEMI HOTEL </h1> 
+        <section>
+            <table class="table table-success table-striped">
+                <thead>
+                    <tr>
+                        <th>Current Date/Time:</th>
+                        <th> Temperature :</th>
+                        <th> Condition :</th>
+                        <th>Location :</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span id="datetime"></span></td>
+                        <td><span id="temperature"></span></td>
+                        <td><span id="description"></span></td>
+                        <td><span id="location"></span></td>
+                    </tr>
+                </tbody>
+           
+            </table>
+            
+        </section>
+    <div></div>
     </div>
 
-    <marquee direction="left" scrollamount="3">  
-        <h1 class="tex"> 𝕃𝕖𝕞𝕚 ℍ𝕠𝕥𝕖𝕝 <br />THE BEST PLACE TO STAY!!</h1>  
-    </marquee>
-
-        <style>
+    
+    <style>
             body {
                 background-image: url("https://i.ibb.co/4jxL4xB/pool-png.jpg");
                 background-color: #cccccc; /* Used if the image is unavailable */
@@ -28,23 +41,29 @@
             }
 
             .welcome {
-                position: relative;
-                left: 150px;
-                top: -15px;
                 background-color: ghostwhite;
-                width: 820px;
-                height: 220px;
             }
-            .tex {
-                color: white;
-                background-image: url("https://i.ibb.co/L0X17xr/A0-CEA36-C-BEAB-4-B6-E-943-C-D4-C58515-DD27.jpg");
-                position: relative;
-                left: 150px;
-                top: 1px;
-                width: 630px;
-                height: 280px;
-            }
-        </style>
+
+         table {
+
+  background-color: green;
+
+  animation-name: info;
+  animation-duration: 10s;
+  animation-iteration-count: 100;
+  animation-direction: alternate;
+}
+
+@@keyframes info {
+  0%   {background-color:Highlight; left:0px; top:0px;}
+  25%  {background-color:darkseagreen; left:200px; top:0px;}
+  50%  {background-color:powderblue; left:200px; top:200px;}
+  75%  {background-color:white; left:0px; top:200px;}
+  100% {background-color:slategrey; left:0px; top:0px;}
+}
+
+
+    </style>
 
 
         <script>

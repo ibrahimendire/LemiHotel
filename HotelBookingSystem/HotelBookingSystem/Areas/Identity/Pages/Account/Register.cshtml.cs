@@ -46,21 +46,20 @@ namespace HotelBookingSystem.Areas.Identity.Pages.Account
         public class InputModel
         {
             [Required]
-            [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)] 
+            [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 3)] 
             [Display(Name = "First Name")]
             public string FirstName { get; set; }
-            [Required]
-            [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
+
+            [Required(ErrorMessage = "Last Name is required")]
             [Display(Name = "Last Name")]
             public string LastName { get; set; }
 
-            [Required]
-            [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
+        
+            [Required(ErrorMessage = "Address is required")]
             [Display(Name = "Address")]
             public string Address { get; set; }
 
-            [Required]
-            [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
+           
             [Display(Name = "Address2")]
             public string Address2{ get; set; }
 
@@ -76,7 +75,7 @@ namespace HotelBookingSystem.Areas.Identity.Pages.Account
             public string State { get; set; }
 
             [Required]
-            [StringLength(50, ErrorMessage = "Enter Zip Code")]
+            [StringLength(8, ErrorMessage = "Enter Zip Code")]
             [Display(Name = "Zip")]
             public string Zip { get; set; }
 
@@ -90,7 +89,7 @@ namespace HotelBookingSystem.Areas.Identity.Pages.Account
             [Display(Name = "Email")]
             public string Email { get; set; }
 
-            [Required]          
+            [Required(ErrorMessage = "Phone Number is required")]
             [Display(Name = "Phone")]
             public string Phone  { get; set; }
 
