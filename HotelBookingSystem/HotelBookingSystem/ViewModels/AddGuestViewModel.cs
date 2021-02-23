@@ -22,14 +22,14 @@ namespace HotelBookingSystem.ViewModels
         public string Phone { get; set; }
 
 
-        [Required(ErrorMessage = "please enter Email")]
+       [EmailAddress]
         public string Email { get; set; }
 
 
         [Required(ErrorMessage = "please enter Address")]
         public string Address { get; set; }
 
-
+        public string RoomType { get; set; }
 
         [Required(ErrorMessage = "please enter Address")]
         public string Address2 { get; set; }
@@ -50,7 +50,7 @@ namespace HotelBookingSystem.ViewModels
         public DateTime CheckoutDate { get; set; }
 
 
-        [Required(ErrorMessage = "please Select Room")]
+       
         public int RoomId { get; set; }
         public List<SelectListItem> Rooms { get; set; }
 

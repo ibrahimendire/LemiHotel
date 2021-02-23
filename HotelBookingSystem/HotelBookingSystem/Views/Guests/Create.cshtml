@@ -132,13 +132,24 @@
                 <input asp-for="CheckoutDate" class="form-control" />
                 <span asp-validation-for="CheckoutDate" class="text-danger"></span>
             </div>
+              <div class="form-group">
+            <label asp-for="RoomId" class="control-label">Room Number</label>
+            <select asp-for="RoomId" class="form-control" asp-items="Model.Rooms"></select>
+        </div>
+        <div>
+            <label asp-for="RoomType" class="control-label">Room Type</label>
+            <select asp-for="RoomType" class="form-control">
+                <option selected>Choose...</option>
+                <option value="Single">Single</option>
+                <option value="Double">Double</option>
+                <option value="King">King</option>
+                <option value="Twin">Twin</option>
+                <option value="Queen">Queen</option>
+            </select>
+            <span asp-validation-for="RoomType" class="text-danger"></span>
+        </div>
             <div class="form-group">
-                <label asp-for="RoomId" class="control-label">Room Number</label>
-                <select asp-for="RoomId" class="form-control" asp-items="Model.Rooms"></select>
-            </div>
-
-            <div class="form-group">
-                <input type="submit" value="Add Guest" class="btn btn-info" />
+                <input type="submit" value="Book Now" class="btn btn-info" />
                 <a asp-action="Index" class="btn btn-success"> <i class="fas fa-undo-alt"></i> &nbsp; Back to List</a>
             </div>
         </form>

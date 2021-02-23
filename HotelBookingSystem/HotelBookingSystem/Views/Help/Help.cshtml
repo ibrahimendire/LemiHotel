@@ -1,0 +1,66 @@
+﻿
+
+@*@model HotelBookingSystem.Models.Guest*@
+
+
+@using HotelBookingSystem.ViewModels;
+@model AddHelpViewModel;
+<h1>Contact</h1>
+
+<hr />
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="HelpForm">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="FirstName" class="control-label"></label>
+                <input asp-for="FirstName" class="form-control" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastName" class="control-label"></label>
+                <input asp-for="LastName" class="form-control" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Phone" class="control-label"></label>
+                <input asp-for="Phone" class="form-control" />
+                <span asp-validation-for="Phone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div>
+                <label asp-for="Issue" class="control-label">What can we help you with</label>
+
+                <select asp-for="Issue" class="form-control">
+                    <option selected>Choose...</option>
+                    <option value="Checkin">Check in</option>
+                    <option value="RoomSupply">Room Supply</option>
+                    <option value="Other">Other</option>
+                </select>
+                <span asp-validation-for="Issue" class="text-danger"></span>
+            </div>
+
+            <div>
+                <label asp-for="HelpText">Tell Us more about what you need</label>
+                <textarea placeholder="say somethig ...." class="texta"></textarea>
+                <span asp-validation-for="HelpText" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Send" class="btn btn-info" />
+                <a asp-action="Help" class="btn btn-success"> <i class="fas fa-undo-alt"></i> &nbsp; Back to List</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

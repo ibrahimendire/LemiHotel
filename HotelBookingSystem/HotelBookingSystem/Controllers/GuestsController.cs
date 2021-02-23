@@ -23,8 +23,16 @@ namespace HotelBookingSystem.Controllers
         // GET: Guests
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = Context.Guest.Include(g => g.Room);
-            return View(await applicationDbContext.ToListAsync());
+            if (User.Identity.IsAuthenticated)
+            {
+                var applicationDbContext = Context.Guest.Include(g => g.Room);
+                return View(await applicationDbContext.ToListAsync());
+
+            }
+            else
+            {
+                return View("GuestBooking");
+            }
         }
 
         // GET: Guests/Details/5
@@ -51,8 +59,10 @@ namespace HotelBookingSystem.Controllers
         {
             List<Room> rooms = Context.Room.ToList();
             AddGuestViewModel addRoomViewModel = new AddGuestViewModel(rooms);
-            //ViewData["RoomId"] = new SelectList(Context.Room, "Id", "Id");
-            return View(addRoomViewModel);
+            
+         
+                return View(addRoomViewModel);
+      
         }
 
         // POST: Guests/Create
@@ -76,6 +86,7 @@ namespace HotelBookingSystem.Controllers
                     City = addGuestViewModel.City,
                     State = addGuestViewModel.State,
                     Zip = addGuestViewModel.Zip,
+                    RoomType = addGuestViewModel.RoomType,
                     CheckinDate = addGuestViewModel.CheckinDate,
                     CheckoutDate = addGuestViewModel.CheckoutDate,
                     Room = theRoom,
@@ -84,8 +95,14 @@ namespace HotelBookingSystem.Controllers
 
                 Context.Guest.Add(newGuest);
                 Context.SaveChanges();
-
-                return Redirect("/Guests");
+                if (User.Identity.IsAuthenticated)
+                {
+                    return Redirect("/Guests");
+                }
+                else
+                {
+                    return Redirect("/Guests/ThankYou");
+                }
             }
             return View(addGuestViewModel);
         }
@@ -177,8 +194,13 @@ namespace HotelBookingSystem.Controllers
         {
             return Context.Guest.Any(e => e.Id == id);
         }
-
-      
-
+public IActionResult About()
+        {
+            return View();
+        }
+  public IActionResult ThankYou()
+        {
+            return View();
+        }
     }
 }

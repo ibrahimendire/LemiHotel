@@ -865,3 +865,8 @@ C:\Users\ibrah\OneDrive\Desktop\Proj\LemiHotel\HotelBookingSystem\HotelBookingSy
 C:\Users\ibrah\OneDrive\Desktop\Proj\LemiHotel\HotelBookingSystem\HotelBookingSystem\obj\Debug\net5.0\ref\HotelBookingSystem.dll
 C:\Users\ibrah\OneDrive\Desktop\Proj\LemiHotel\HotelBookingSystem\HotelBookingSystem\obj\Debug\net5.0\HotelBookingSystem.pdb
 C:\Users\ibrah\OneDrive\Desktop\Proj\LemiHotel\HotelBookingSystem\HotelBookingSystem\obj\Debug\net5.0\HotelBookingSystem.genruntimeconfig.cache
+C:\Users\ibrah\OneDrive\Desktop\Proj\LemiHotel\HotelBookingSystem\HotelBookingSystem\obj\Debug\net5.0\Razor\Views\Guests\About.cshtml.g.cs
+C:\Users\ibrah\OneDrive\Desktop\Proj\LemiHotel\HotelBookingSystem\HotelBookingSystem\obj\Debug\net5.0\Razor\Views\Help\Help.cshtml.g.cs
+C:\Users\ibrah\OneDrive\Desktop\Proj\LemiHotel\HotelBookingSystem\HotelBookingSystem\obj\Debug\net5.0\Razor\Views\Help\HelpForm.cshtml.g.cs
+C:\Users\ibrah\OneDrive\Desktop\Proj\LemiHotel\HotelBookingSystem\HotelBookingSystem\obj\Debug\net5.0\Razor\Views\Guests\GuestBooking.cshtml.g.cs
+C:\Users\ibrah\OneDrive\Desktop\Proj\LemiHotel\HotelBookingSystem\HotelBookingSystem\obj\Debug\net5.0\Razor\Views\Guests\ThankYou.cshtml.g.cs

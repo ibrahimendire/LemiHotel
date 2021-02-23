@@ -18,5 +18,6 @@ namespace HotelBookingSystem.Data
         public DbSet<HotelBookingSystem.Models.RoomCategory> RoomCategory { get; set; }
         public DbSet<HotelBookingSystem.Models.Guest> Guest { get; set; }
         public DbSet<HotelBookingSystem.Models.Checkout> Checkout { get; set; }
+        public DbSet<HotelBookingSystem.Models.Help> Help { get; set; }
     }
 }

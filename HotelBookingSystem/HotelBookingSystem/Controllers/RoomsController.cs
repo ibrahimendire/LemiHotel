@@ -171,7 +171,7 @@ namespace HotelBookingSystem.Controllers
 
 
 
-        public async Task<IActionResult> ShowSearchForm()
+        public IActionResult ShowSearchForm()
         {
 
             return View();

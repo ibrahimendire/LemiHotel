@@ -3,8 +3,12 @@
 
 
 <p>
+    @if (User.Identity.IsAuthenticated)
+    {
     <a asp-action="Create">Book  New Guest</a>
-    
+    }else{
+    <a asp-action="HelpForm" asp-controller="Help">Book  Now</a>
+    }
 </p>
 <table class="table table-bordered">
     <thead>
