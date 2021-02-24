@@ -15,6 +15,9 @@ namespace HotelBookingSystem.Models
         public string Issue { get; set; }
         public string HelpText { get; set; }
 
+        public Help()
+        {
 
+        }
     }
 }

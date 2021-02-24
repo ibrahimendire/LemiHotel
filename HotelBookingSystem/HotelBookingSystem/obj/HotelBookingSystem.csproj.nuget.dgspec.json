@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ibrah\\OneDrive\\Desktop\\Proj\\LemiHotel\\HotelBookingSystem\\HotelBookingSystem\\HotelBookingSystem.csproj": {}
+    "C:\\Users\\ibrah\\OneDrive\\Desktop\\HPro\\LemiHotel\\HotelBookingSystem\\HotelBookingSystem\\HotelBookingSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ibrah\\OneDrive\\Desktop\\Proj\\LemiHotel\\HotelBookingSystem\\HotelBookingSystem\\HotelBookingSystem.csproj": {
+    "C:\\Users\\ibrah\\OneDrive\\Desktop\\HPro\\LemiHotel\\HotelBookingSystem\\HotelBookingSystem\\HotelBookingSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ibrah\\OneDrive\\Desktop\\Proj\\LemiHotel\\HotelBookingSystem\\HotelBookingSystem\\HotelBookingSystem.csproj",
+        "projectUniqueName": "C:\\Users\\ibrah\\OneDrive\\Desktop\\HPro\\LemiHotel\\HotelBookingSystem\\HotelBookingSystem\\HotelBookingSystem.csproj",
         "projectName": "HotelBookingSystem",
-        "projectPath": "C:\\Users\\ibrah\\OneDrive\\Desktop\\Proj\\LemiHotel\\HotelBookingSystem\\HotelBookingSystem\\HotelBookingSystem.csproj",
+        "projectPath": "C:\\Users\\ibrah\\OneDrive\\Desktop\\HPro\\LemiHotel\\HotelBookingSystem\\HotelBookingSystem\\HotelBookingSystem.csproj",
         "packagesPath": "C:\\Users\\ibrah\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ibrah\\OneDrive\\Desktop\\Proj\\LemiHotel\\HotelBookingSystem\\HotelBookingSystem\\obj\\",
+        "outputPath": "C:\\Users\\ibrah\\OneDrive\\Desktop\\HPro\\LemiHotel\\HotelBookingSystem\\HotelBookingSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ibrah\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,17 +54,17 @@
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[5.0.2, )"
+              "version": "[5.0.3, )"
             },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
-              "version": "[5.0.2, )"
+              "version": "[5.0.3, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.2, )"
+              "version": "[5.0.3, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",

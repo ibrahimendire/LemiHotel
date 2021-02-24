@@ -34,6 +34,9 @@
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Checkouts" asp-action="Index"><h3 class="btn btn-outline-success">Checkin/Checkout</h3></a>
                             </li>
+                            <li>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Helps" asp-action="Index"><h3 class="btn btn-outline-success">HelpRequests</h3></a>
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="RoomCategories" asp-action="Index"><h3 class="btn btn-outline-success">RoomType</h3></a>
                             </li>
@@ -41,7 +44,7 @@
                                 <a class="nav-link text-dark" asp-area="" asp-controller="AddEmployee" asp-action="Index"><h3 class="btn btn-outline-success">AddEmployee</h3></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Rooms" asp-action="ShowSearchForm"><h3 class="btn btn-outline-success">Search</h3></a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Rooms" asp-action="ShowSearchForm"><h3 class="btn btn-outline-success">SearchRoom</h3></a>
                             </li>
                         }
                         else
@@ -50,9 +53,9 @@
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Guests" asp-action="About"><h3 class="btn btn-outline-success">About</h3></a>
                             </li>
                             <li>
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Help" asp-action="Help"><h3 class="btn btn-outline-success">Contact Us</h3></a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Helps" asp-action="Index"><h3 class="btn btn-outline-success">Contact Us</h3></a>
                             </li>
-                           
+
                         }
                     </ul>
                     <partial name="_LoginPartial" />
