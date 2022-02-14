@@ -38,3 +38,43 @@ C:\Users\ibrah\OneDrive\Desktop\LiftOff Project\LemiHotel\LemiHotel\obj\Debug\ne
 C:\Users\ibrah\OneDrive\Desktop\LiftOff Project\LemiHotel\LemiHotel\obj\Debug\net5.0\LemiHotel.pdb
 C:\Users\ibrah\OneDrive\Desktop\LiftOff Project\LemiHotel\LemiHotel\obj\Debug\net5.0\LemiHotel.genruntimeconfig.cache
 C:\Users\ibrah\OneDrive\Desktop\LiftOff Project\LemiHotel\LemiHotel\obj\Debug\net5.0\LemiHotel.csproj.CopyComplete
+C:\Users\ibrah\OneDrive\Desktop\Ibro22\LemiHotel\LemiHotel\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\ibrah\OneDrive\Desktop\Ibro22\LemiHotel\LemiHotel\bin\Debug\net5.0\appsettings.json
+C:\Users\ibrah\OneDrive\Desktop\Ibro22\LemiHotel\LemiHotel\bin\Debug\net5.0\LemiHotel.StaticWebAssets.xml
+C:\Users\ibrah\OneDrive\Desktop\Ibro22\LemiHotel\LemiHotel\bin\Debug\net5.0\LemiHotel.exe
+C:\Users\ibrah\OneDrive\Desktop\Ibro22\LemiHotel\LemiHotel\bin\Debug\net5.0\LemiHotel.deps.json
+C:\Users\ibrah\OneDrive\Desktop\Ibro22\LemiHotel\LemiHotel\bin\Debug\net5.0\LemiHotel.runtimeconfig.json
+C:\Users\ibrah\OneDrive\Desktop\Ibro22\LemiHotel\LemiHotel\bin\Debug\net5.0\LemiHotel.runtimeconfig.dev.json
+C:\Users\ibrah\OneDrive\Desktop\Ibro22\LemiHotel\LemiHotel\bin\Debug\net5.0\LemiHotel.dll
+C:\Users\ibrah\OneDrive\Desktop\Ibro22\LemiHotel\LemiHotel\bin\Debug\net5.0\ref\LemiHotel.dll
+C:\Users\ibrah\OneDrive\Desktop\Ibro22\LemiHotel\LemiHotel\bin\Debug\net5.0\LemiHotel.pdb
+C:\Users\ibrah\OneDrive\Desktop\Ibro22\LemiHotel\LemiHotel\bin\Debug\net5.0\LemiHotel.Views.dll
+C:\Users\ibrah\OneDrive\Desktop\Ibro22\LemiHotel\LemiHotel\bin\Debug\net5.0\LemiHotel.Views.pdb
+C:\Users\ibrah\OneDrive\Desktop\Ibro22\LemiHotel\LemiHotel\obj\Debug\net5.0\LemiHotel.csproj.AssemblyReference.cache
+C:\Users\ibrah\OneDrive\Desktop\Ibro22\LemiHotel\LemiHotel\obj\Debug\net5.0\LemiHotel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ibrah\OneDrive\Desktop\Ibro22\LemiHotel\LemiHotel\obj\Debug\net5.0\LemiHotel.AssemblyInfoInputs.cache
+C:\Users\ibrah\OneDrive\Desktop\Ibro22\LemiHotel\LemiHotel\obj\Debug\net5.0\LemiHotel.AssemblyInfo.cs
+C:\Users\ibrah\OneDrive\Desktop\Ibro22\LemiHotel\LemiHotel\obj\Debug\net5.0\LemiHotel.csproj.CoreCompileInputs.cache
+C:\Users\ibrah\OneDrive\Desktop\Ibro22\LemiHotel\LemiHotel\obj\Debug\net5.0\LemiHotel.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ibrah\OneDrive\Desktop\Ibro22\LemiHotel\LemiHotel\obj\Debug\net5.0\LemiHotel.RazorAssemblyInfo.cache
+C:\Users\ibrah\OneDrive\Desktop\Ibro22\LemiHotel\LemiHotel\obj\Debug\net5.0\LemiHotel.RazorAssemblyInfo.cs
+C:\Users\ibrah\OneDrive\Desktop\Ibro22\LemiHotel\LemiHotel\obj\Debug\net5.0\scopedcss\bundle\LemiHotel.styles.css
+C:\Users\ibrah\OneDrive\Desktop\Ibro22\LemiHotel\LemiHotel\obj\Debug\net5.0\staticwebassets\LemiHotel.StaticWebAssets.Manifest.cache
+C:\Users\ibrah\OneDrive\Desktop\Ibro22\LemiHotel\LemiHotel\obj\Debug\net5.0\LemiHotel.TagHelpers.input.cache
+C:\Users\ibrah\OneDrive\Desktop\Ibro22\LemiHotel\LemiHotel\obj\Debug\net5.0\LemiHotel.TagHelpers.output.cache
+C:\Users\ibrah\OneDrive\Desktop\Ibro22\LemiHotel\LemiHotel\obj\Debug\net5.0\LemiHotel.RazorCoreGenerate.cache
+C:\Users\ibrah\OneDrive\Desktop\Ibro22\LemiHotel\LemiHotel\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\ibrah\OneDrive\Desktop\Ibro22\LemiHotel\LemiHotel\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\ibrah\OneDrive\Desktop\Ibro22\LemiHotel\LemiHotel\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\ibrah\OneDrive\Desktop\Ibro22\LemiHotel\LemiHotel\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\ibrah\OneDrive\Desktop\Ibro22\LemiHotel\LemiHotel\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\ibrah\OneDrive\Desktop\Ibro22\LemiHotel\LemiHotel\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\ibrah\OneDrive\Desktop\Ibro22\LemiHotel\LemiHotel\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\ibrah\OneDrive\Desktop\Ibro22\LemiHotel\LemiHotel\obj\Debug\net5.0\LemiHotel.RazorTargetAssemblyInfo.cache
+C:\Users\ibrah\OneDrive\Desktop\Ibro22\LemiHotel\LemiHotel\obj\Debug\net5.0\LemiHotel.RazorTargetAssemblyInfo.cs
+C:\Users\ibrah\OneDrive\Desktop\Ibro22\LemiHotel\LemiHotel\obj\Debug\net5.0\LemiHotel.Views.pdb
+C:\Users\ibrah\OneDrive\Desktop\Ibro22\LemiHotel\LemiHotel\obj\Debug\net5.0\LemiHotel.dll
+C:\Users\ibrah\OneDrive\Desktop\Ibro22\LemiHotel\LemiHotel\obj\Debug\net5.0\ref\LemiHotel.dll
+C:\Users\ibrah\OneDrive\Desktop\Ibro22\LemiHotel\LemiHotel\obj\Debug\net5.0\LemiHotel.pdb
+C:\Users\ibrah\OneDrive\Desktop\Ibro22\LemiHotel\LemiHotel\obj\Debug\net5.0\LemiHotel.genruntimeconfig.cache
+C:\Users\ibrah\OneDrive\Desktop\Ibro22\LemiHotel\LemiHotel\obj\Debug\net5.0\LemiHotel.csproj.CopyComplete
