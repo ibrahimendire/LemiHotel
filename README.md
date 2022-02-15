@@ -4,25 +4,7 @@
   <li>
     <h2>Look Some  screenshot pictures of the app below</h2>
 </ul> 
-  </li>
-#Features of Minimal Viable Product
-<ul>
-
-  <li> Search: able to search avaliable rooms </li>
-<li> Email: Users will be able to recieve email when they checked in about their room detail </li>
-</ul>
-# Technologies
-<li>JavaScript </li>
-<li>SQL Server</li>
-<li>Bootstrap</li>
-<li>CSharp</li>
-# What I’ll have to learn
-  <ul>
-<li> Bootstrap and overriding styling</li>
-<li> Agile development methodology</li>
-<li> Trello managment tool</li>
-<li> authentication and authorization </li>
-</ul>
+  
 
 ![image](https://user-images.githubusercontent.com/33503887/110574965-b1b1f380-8123-11eb-80e1-e86a9dbf0caa.png)
 ![image](https://user-images.githubusercontent.com/33503887/110575048-e1f99200-8123-11eb-8021-ca4f052461cb.png)
